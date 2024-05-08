@@ -8,7 +8,9 @@ body, h1, h2, h3, p, ul, li {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+
 }
+
 
 .container {
 
@@ -20,17 +22,22 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     width: 80%;
-    margin: 0 auto;
+    margin: 1px;
     max-width: 1200px;
-    padding: 20px;
+    padding: 10px;
 }
 
 
 header {
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transition: all 0.3s ease;
 
-    background: #333;
     color: #fff;
     padding: 20px 0;
 }
@@ -55,6 +62,9 @@ nav ul {
 }
 
 nav ul li {
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.2);
     display: inline;
     margin-right: 20px;
 }
@@ -66,10 +76,12 @@ nav ul li:last-child {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .hero {
-    background: #f4f4f4;
+    backdrop-filter: blur(2px);
+    background: transparent;
     padding: 50px 0;
     text-align: center;
 }
@@ -86,7 +98,7 @@ nav ul li a {
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .features {
