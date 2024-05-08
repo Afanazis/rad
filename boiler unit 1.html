@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <!-- INPUT STYLING -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+
+<!-- header -->
+    <header>
+        <div class="logoIP">
+            <img src="pict/logoIP1.png" alt="logoIP"><h2>UBP SINGKAWANG</h2>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!-- header done -->
+
+<!-- welcome -->
+<!-- isi -->
+
+<body>
+
+
+    <input type="text" id="searchInput" placeholder="Search...">
+<table border="1" id="dataTable">
+        <thead>
+          <tr>
+            <th>KKS</th>
+            <th>NAMA PERALATAN</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><button onclick="openModal(17388727728)">17388727728</button></td>
+            <td>SLAG COOLER 2</td>
+          </td>
+          </tr>
+          <tr>
+            <td><button onclick="openModal(77772899289)">77772899289</button></td>
+            <td>MOV INLET COAL FEEDER 1 B</td>
+          </tr>
+          <tr>
+            <td><button onclick="openModal(918391803810)">918391803810</button></td>
+            <td>PRESSURE TRANSMITTER FURNACE OUTLET PRESSURE (LEFT)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <script src="js/search.js"></script>      
+
+<!-- footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; Ideafest 2024 UBP Singkawang</p>
+        </div>
+    </footer>
+<!-- modal popup -->
+
+
+
+<div id=17388727728 class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(17388727728)">&times;</span>
+    <h2>SLAG COOLER 2</h2>
+    <p>Location ground floor</p>
+    <img src="pict/slag-cooler-lg.jpg" alt="mov">
+  </div>
+</div>
+
+<div id=77772899289 class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(77772899289)">&times;</span>
+    <h2>MOV INLET COAL FEEDER 1 B </h2>
+    <p>location lt.3</p>
+    <img src="pict/mov.jpg" alt="mov">
+  </div>
+</div>
+
+<div id=918391803810 class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(918391803810)">&times;</span>
+    <h2>PRESSURE TRANSMITTER FURNACE OUTLET PRESSURE (LEFT)</h2>
+    <p>bla bla bla</p>
+  </div>
+</div>
+
+
+</body>
+
+</html>
+
